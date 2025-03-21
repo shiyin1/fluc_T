@@ -42,7 +42,7 @@ fig.subplots_adjust(top=0.9, bottom=0.15, left=0.15, right=0.95, hspace=0.33,wsp
 
 fig.savefig("./chi1.pdf")
 ################################################################################################################
-c2=-T**2*(chi2)**-1
+c2=T**2*(chi2)**-1
 # Create figure
 fig=plt.figure(figsize=(4.5, 3.5))
 #fig=plt.figure()
@@ -52,7 +52,7 @@ ax1.set_ylabel(r'$c_2(T)$', fontsize=13, color='black')
 ax1.set_xlabel(r'$T\,[\mathrm{MeV}]$', fontsize=13, color='black')
 ax1.legend(loc=0,fontsize='10',frameon=True,shadow=True,handlelength=3.,borderpad=0.5,borderaxespad=1,numpoints=1,scatterpoints=1)
 #ax1.axis([0,300,-10.,-10**-2])
-ax1.axis([0,300,-2.,0])
+ax1.axis([0,300,0,2])
 #ax1.set_yscale('symlog',linthresh=10**-7)
 for label in ax1.xaxis.get_ticklabels():
     label.set_fontsize(10)
@@ -84,7 +84,7 @@ fig.subplots_adjust(top=0.9, bottom=0.15, left=0.17, right=0.95, hspace=0.33,wsp
 
 fig.savefig("./chi3.pdf")
 ################################################################################################################
-c4=T**8*(-3*(chi2)**-5*chi3**2+(chi2)**-4*chi4)
+c4=T**8*(3*(chi2)**-5*chi3**2-(chi2)**-4*chi4)
 # Create figure
 fig=plt.figure(figsize=(4.5, 3.5))
 #fig=plt.figure()
@@ -93,7 +93,7 @@ ax1.plot(T,c4,linewidth=2,alpha=1,label=r'$\mu_B=0$')
 ax1.set_ylabel(r'$c_4(T)$', fontsize=13, color='black')
 ax1.set_xlabel(r'$T\,[\mathrm{MeV}]$', fontsize=13, color='black')
 ax1.legend(loc=0,fontsize='10',frameon=True,shadow=True,handlelength=3.,borderpad=0.5,borderaxespad=1,numpoints=1,scatterpoints=1)
-ax1.axis([0,300,-30.,10])
+ax1.axis([0,300,-10.,30])
 #ax1.set_yscale('symlog',linthresh=10**-10)
 for label in ax1.xaxis.get_ticklabels():
     label.set_fontsize(10)
