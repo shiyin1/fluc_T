@@ -14,6 +14,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.cm as cm 
 from matplotlib.font_manager import FontProperties
 import pylab as pl
+from matplotlib.ticker import FixedLocator
 from decimal import Decimal, getcontext
 getcontext().prec = 20
 
@@ -94,7 +95,7 @@ ax1.set_ylabel(r'$c_2(T,\mu_B)$', fontsize=13, color='black')
 ax1.set_xlabel(r'$T\,[\mathrm{MeV}]$', fontsize=13, color='black')
 ax1.legend(loc=0,fontsize='10',frameon=True,shadow=True,handlelength=3.,borderpad=0.5,borderaxespad=1,numpoints=1,scatterpoints=1)
 #ax1.axis([0,300,-10.,-10**-2])
-ax1.axis([0,300,10**-2,10])
+ax1.axis([50,300,10**-2,2])
 ax1.set_yscale('symlog',linthresh=10**-7)
 for label in ax1.xaxis.get_ticklabels():
     label.set_fontsize(10)
@@ -119,7 +120,7 @@ ax1.plot(T,c3mub550,linewidth=2,alpha=0.8)
 ax1.set_ylabel(r'$c_3(T,\mu_B)$', fontsize=13, color='black')
 ax1.set_xlabel(r'$T\,[\mathrm{MeV}]$', fontsize=13, color='black')
 #ax1.legend(loc=0,fontsize='10',frameon=True,shadow=True,handlelength=3.,borderpad=0.5,borderaxespad=1,numpoints=1,scatterpoints=1)
-ax1.axis([0,300,-100.,-10**-4])
+ax1.axis([50,300,-10.,-10**-4])
 ax1.set_yscale('symlog',linthresh=10**-7)
 for label in ax1.xaxis.get_ticklabels():
     label.set_fontsize(10)
@@ -151,8 +152,24 @@ ax1.plot(T,c4_mub550,linewidth=2,alpha=0.8)
 ax1.set_ylabel(r'$c_4(T,\mu_B)$', fontsize=13, color='black')
 ax1.set_xlabel(r'$T\,[\mathrm{MeV}]$', fontsize=13, color='black')
 #ax1.legend(loc=0,fontsize='10',frameon=True,shadow=True,handlelength=3.,borderpad=0.5,borderaxespad=1,numpoints=1,scatterpoints=1)
-ax1.axis([0,300,10**-5,10000])
-ax1.set_yscale('symlog',linthresh=10**-12)
+ax1.axis([50,300,10**-5,1000])
+ax1.set_yscale('symlog',linthresh=10**-10)
+
+ax_inset = fig.add_axes([0.55, 0.5, 0.35, 0.35])  # 相对于 figure 的坐标
+ax_inset.plot(T,c4mub0,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c4mub100,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c4mub200,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c4mub300,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c4mub400,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c4mub500,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c4mub550,linewidth=2,alpha=0.8) 
+ax_inset.axis([50,300,-5*10**-4,10**-3])
+
+ax_inset.set_xticks([50,100,150,200,250,300])  # 先设定刻度位置
+ax_inset.set_xticklabels(["50", "100", "150", "200", "250", "300"], fontsize=8) 
+ax_inset.set_yticks([-4*10**-4,-2*10**-4,0,2*10**-4,4*10**-4,6*10**-4,8*10**-4,10**-3])  # 先设定刻度位置
+ax_inset.set_yticklabels([r'$-4\times 10^{-4}$', r'$-2\times 10^{-4}$', r'0', r'$2\times 10^{-4}$', r'$4\times 10^{-4}$', r'$6\times 10^{-4}$',r'$8\times 10^{-4}$',r'$1\times 10^{-3}$'], fontsize=8) 
+
 for label in ax1.xaxis.get_ticklabels():
     label.set_fontsize(10)
 for label in ax1.yaxis.get_ticklabels():
@@ -182,9 +199,24 @@ ax1.plot(T,c5_mub500,linewidth=2,alpha=0.8)
 ax1.plot(T,c5_mub550,linewidth=2,alpha=0.8) 
 ax1.set_ylabel(r'$c_5(T,\mu_B)$', fontsize=13, color='black')
 ax1.set_xlabel(r'$T\,[\mathrm{MeV}]$', fontsize=13, color='black')
-#ax1.legend(loc=0,fontsize='10',frameon=True,shadow=True,handlelength=3.,borderpad=0.5,borderaxespad=1,numpoints=1,scatterpoints=1)
-ax1.axis([0,300,-10**5,-10**-6])
+ax1.axis([50,300,-10**4,-10**-6])
 ax1.set_yscale('symlog',linthresh=10**-12)
+
+ax_inset = fig.add_axes([0.56, 0.2, 0.35, 0.35])  # 相对于 figure 的坐标
+ax_inset.plot(T,c5mub0,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c5mub100,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c5mub200,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c5mub300,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c5mub400,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c5mub500,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c5mub550,linewidth=2,alpha=0.8) 
+ax_inset.axis([50,300,-2*10**-3,5*10**-4])
+
+ax_inset.set_xticks([50,100,150,200,250,300])  # 先设定刻度位置
+ax_inset.set_xticklabels(["50", "100", "150", "200", "250", "300"], fontsize=8) 
+ax_inset.set_yticks([-2*10**-3,-1.5*10**-3,-1*10**-3,-5*10**-4,0,5*10**-4])  # 先设定刻度位置
+ax_inset.set_yticklabels([r'$-2\times 10^{-3}$', r'$-1.5\times 10^{-3}$', r'$-1\times 10^{-3}$', r'$-0.5\times 10^{-3}$', r'$0$',r'$0.5\times 10^{-3}$'], fontsize=8) 
+
 for label in ax1.xaxis.get_ticklabels():
     label.set_fontsize(10)
 for label in ax1.yaxis.get_ticklabels():
@@ -212,12 +244,26 @@ ax1.plot(T,c6_mub300,linewidth=2,alpha=0.8)
 ax1.plot(T,c6_mub400,linewidth=2,alpha=0.8) 
 ax1.plot(T,c6_mub500,linewidth=2,alpha=0.8) 
 ax1.plot(T,c6_mub550,linewidth=2,alpha=0.8) 
-#ax1.scatter(T,c6,alpha=1,edgecolors='none',label=r'$\mu_B=0$') 
 ax1.set_ylabel(r'$c_6(T,\mu_B)$', fontsize=13, color='black')
 ax1.set_xlabel(r'$T\,[\mathrm{MeV}]$', fontsize=13, color='black')
-#ax1.legend(loc=0,fontsize='10',frameon=True,shadow=True,handlelength=3.,borderpad=0.5,borderaxespad=1,numpoints=1,scatterpoints=1)
-ax1.axis([0,300,10**-7,10**7])
+ax1.axis([50,300,10**-7,10**6])
 ax1.set_yscale('symlog',linthresh=10**-12)
+
+ax_inset = fig.add_axes([0.56, 0.51, 0.35, 0.35])  # 相对于 figure 的坐标
+ax_inset.plot(T,c6mub0,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c6mub100,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c6mub200,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c6mub300,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c6mub400,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c6mub500,linewidth=2,alpha=0.8) 
+ax_inset.plot(T,c6mub550,linewidth=2,alpha=0.8) 
+ax_inset.axis([50,300,-1.5*10**-3,1*10**-3])
+
+ax_inset.set_xticks([50,100,150,200,250,300])  # 先设定刻度位置
+ax_inset.set_xticklabels(["50", "100", "150", "200", "250", "300"], fontsize=8) 
+ax_inset.set_yticks([-1.5*10**-3,-1.0*10**-3,-0.5*10**-3,0,0.5*10**-3,1.0*10**-3])  # 先设定刻度位置
+ax_inset.set_yticklabels([r'$-1.5\times 10^{-3}$', r'$-1.0\times 10^{-3}$', r'$-0.5\times 10^{-3}$', r'$0$',r'$0.5\times 10^{-3}$',r'$1.0\times 10^{-3}$'], fontsize=8) 
+
 for label in ax1.xaxis.get_ticklabels():
     label.set_fontsize(10)
 for label in ax1.yaxis.get_ticklabels():
