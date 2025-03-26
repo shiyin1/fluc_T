@@ -172,6 +172,10 @@ ax1.set_xlabel(r'$T\,[\mathrm{MeV}]$', fontsize=13, color='black')
 #ax1.legend(loc=0,fontsize='10',frameon=True,shadow=True,handlelength=3.,borderpad=0.5,borderaxespad=1,numpoints=1,scatterpoints=1)
 ax1.axis([50,300,-3000,2000])
 #ax1.set_yscale('symlog',linthresh=10**-10)
+ax1.set_xticks([50,100,150,200,250,300])  # 先设定刻度位置
+ax1.set_xticklabels(["50", "100", "150", "200", "250", "300"], fontsize=8) 
+ax1.set_yticks([-3000,-2000,-1000,0,1000,2000])  # 先设定刻度位置
+ax1.set_yticklabels([r'$-3\times 10^{3}$',r'$-2\times 10^{3}$',r'$-1\times 10^{3}$',r'$0$',r'$1\times 10^{3}$',r'$2\times 10^{3}$'], fontsize=8) 
 
 for label in ax1.xaxis.get_ticklabels():
     label.set_fontsize(10)
@@ -197,6 +201,10 @@ ax1.set_ylabel(r'$T\,\partial^5p(T,\mu_B)/\partial T^5$', fontsize=13, color='bl
 ax1.set_xlabel(r'$T\,[\mathrm{MeV}]$', fontsize=13, color='black')
 ax1.axis([50,300,-1.1*10**5,10**5])
 #ax1.set_yscale('symlog',linthresh=10**-12)
+ax1.set_xticks([50,100,150,200,250,300])  # 先设定刻度位置
+ax1.set_xticklabels(["50", "100", "150", "200", "250", "300"], fontsize=8) 
+ax1.set_yticks([-100000,-50000,0,50000,100000])  # 先设定刻度位置
+ax1.set_yticklabels([r'$-1\times 10^{5}$',r'$-5\times 10^{4}$',r'$0$',r'$5\times 10^{4}$',r'$1\times 10^{5}$'], fontsize=8) 
 
 for label in ax1.xaxis.get_ticklabels():
     label.set_fontsize(10)
@@ -222,12 +230,16 @@ ax1.set_ylabel(r'$T^2\,\partial^6p(T,\mu_B)/\partial T^6$', fontsize=13, color='
 ax1.set_xlabel(r'$T\,[\mathrm{MeV}]$', fontsize=13, color='black')
 ax1.axis([50,300,-2*10**6,3*10**6])
 #ax1.set_yscale('symlog',linthresh=10**-12)
+ax1.set_xticks([50,100,150,200,250,300])  # 先设定刻度位置
+ax1.set_xticklabels(["50", "100", "150", "200", "250", "300"], fontsize=8) 
+ax1.set_yticks([-2000000,-1000000,0,1000000,2000000,3000000])  # 先设定刻度位置
+ax1.set_yticklabels([r'$-2\times 10^{6}$',r'$-1\times 10^{6}$',r'$0$',r'$1\times 10^{6}$',r'$2\times 10^{6}$',r'$3\times 10^{6}$'], fontsize=8) 
 
 for label in ax1.xaxis.get_ticklabels():
     label.set_fontsize(10)
 for label in ax1.yaxis.get_ticklabels():
     label.set_fontsize(10)
 
-fig.subplots_adjust(top=0.9, bottom=0.15, left=0.25, right=0.95, hspace=0.33,wspace=0.2)
+fig.subplots_adjust(top=0.9, bottom=0.15, left=0.21, right=0.95, hspace=0.33,wspace=0.2)
 
 fig.savefig("./chi6.pdf")
