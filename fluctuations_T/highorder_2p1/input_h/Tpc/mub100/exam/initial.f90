@@ -62,9 +62,9 @@ subroutine initial(Nflow,yflow)
 
   !explicit chiral symmetry breaking term
   !jl=119.Q+00**3
-  jl=97.Q+00**3
+  jl=99.Q+00**3
   !in unit of MeV^3
-  js=280Q+00**3
+  js=279Q+00**3
   !in unit of MeV^3
 
   sigmal_i=40.Q+00
