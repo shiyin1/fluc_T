@@ -1,0 +1,10 @@
+clear;
+V1=load('../../../mub0/BUFFER/VTOTAL.DAT');
+T1=load('../../../mub0/BUFFER/TMEV.DAT');
+p1=(V1(1)-V1)./T1.^4;
+V=load('VTOTAL.DAT');
+T=load('TMEV.DAT');
+p=(V(1)-V)./T.^4;
+plot(p1);
+hold on;
+plot(p);

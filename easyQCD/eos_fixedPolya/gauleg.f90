@@ -1,0 +1,39 @@
+MODULE GAULEG_MOD
+!Rui Wen 2020.12.30
+CONTAINS
+SUBROUTINE GAULEG(X1,X2,X,W,N)
+
+  USE CONST_SAVE , ONLY : PI
+  IMPLICIT  NONE
+  INTEGER(2),INTENT(IN) :: N
+  REAL(16),INTENT(IN)   :: X1,X2
+  REAL(16),INTENT(OUT)  :: X(N),W(N)
+  REAL(16),PARAMETER    :: EPS=1.Q-14
+  INTEGER(2)  I,J,M
+  REAL(16) P1,P2,P3,PP,XL,XM,Z,Z1
+
+  M=(N+1)/2
+  XM=0.5Q+0*(X2+X1)
+  XL=0.5Q+0*(X2-X1)
+  DO I=1,M
+    Z=COS(PI*(I-0.25Q+0)/(N+0.5Q+0))
+    DO
+      P1=1.Q+0
+      P2=0.Q+0
+      DO J=1,N
+        P3=P2
+        P2=P1
+        P1=((2.Q+0*J-1.Q+0)*Z*P2-(J-1.Q+0)*P3)/J
+      END DO
+      PP=N*(Z*P1-P2)/(Z*Z-1.Q+0)
+      Z1=Z
+      Z=Z1-P1/PP
+      IF(.NOT.ABS(Z-Z1)>EPS) EXIT
+    END DO
+    X(I)=XM-XL*Z
+    X(N+1-I)=XM+XL*Z
+    W(I)=2.Q+0*XL/((1.Q+0-Z*Z)*PP*PP)
+    W(N+1-I)=W(I)
+  END DO
+END SUBROUTINE GAULEG
+END MODULE GAULEG_MOD
