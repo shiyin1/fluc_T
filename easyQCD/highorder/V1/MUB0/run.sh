@@ -44,5 +44,5 @@ sh Tem21/run.sh &
 wait
 for a in {1..21} 
 do
-mv Tem$a/BUFFER/VTOTAL.DAT DATA/V$a.dat
+mv Tem$a/BUFFER/VTOTAL.DAT data/V$a.dat
 done

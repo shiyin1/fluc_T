@@ -29,7 +29,7 @@ program QM
   real(16) chebev
   external chebev
 
-  character(15) fileV1
+  character(14) fileV1
   character(16) fileV2
 
   integer  js
@@ -44,7 +44,7 @@ program QM
 
   do jl=1,9
     j=jl
-    write(fileV1,'(a10,i1,a4)')'../DATA/V',jl,'.dat'
+    write(fileV1,'(a9,i1,a4)')'../data/V',jl,'.dat'
     open(unit=51,file=Trim(fileV1))
     do i=1,Tnum
       read(51,*)V_res(i,j)
@@ -54,7 +54,7 @@ program QM
 
   do jl=10,munum
     j=jl
-    write(fileV2,'(a10,i2,a4)')'../DATA/V',jl,'.dat'
+    write(fileV2,'(a9,i2,a4)')'../data/V',jl,'.dat'
     open(unit=51,file=Trim(fileV2))
     do i=1,Tnum
       read(51,*)V_res(i,j)
