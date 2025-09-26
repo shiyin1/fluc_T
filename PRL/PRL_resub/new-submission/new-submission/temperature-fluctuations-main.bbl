@@ -1,0 +1,814 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{62}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Shuryak}(1980)}]{Shuryak:1980tp}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~V.}\ \bibnamefont
+  {Shuryak}},\ }\bibfield  {title} {\bibinfo {title} {{Quantum Chromodynamics
+  and the Theory of Superdense Matter}},\ }\href
+  {https://doi.org/10.1016/0370-1573(80)90105-2} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rept.}\ }\textbf {\bibinfo {volume} {61}},\
+  \bibinfo {pages} {71} (\bibinfo {year} {1980})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Harris}\ and\ \citenamefont
+  {Muller}(1996)}]{Harris:1996zx}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~W.}\ \bibnamefont
+  {Harris}}\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Muller}},\ }\bibfield  {title} {\bibinfo {title} {{The Search for the quark
+  - gluon plasma}},\ }\href {https://doi.org/10.1146/annurev.nucl.46.1.71}
+  {\bibfield  {journal} {\bibinfo  {journal} {Ann. Rev. Nucl. Part. Sci.}\
+  }\textbf {\bibinfo {volume} {46}},\ \bibinfo {pages} {71} (\bibinfo {year}
+  {1996})},\ \Eprint {https://arxiv.org/abs/hep-ph/9602235}
+  {arXiv:hep-ph/9602235} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Adams}\ \emph
+  {et~al.}(2005{\natexlab{a}})\citenamefont {Adams} \emph
+  {et~al.}}]{STAR:2005gfr}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Adams}} \emph {et~al.} (\bibinfo {collaboration} {STAR}),\ }\bibfield
+  {title} {\bibinfo {title} {{Experimental and theoretical challenges in the
+  search for the quark gluon plasma: The STAR Collaboration's critical
+  assessment of the evidence from RHIC collisions}},\ }\href
+  {https://doi.org/10.1016/j.nuclphysa.2005.03.085} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nucl. Phys. A}\ }\textbf {\bibinfo {volume} {757}},\
+  \bibinfo {pages} {102} (\bibinfo {year} {2005}{\natexlab{a}})},\ \Eprint
+  {https://arxiv.org/abs/nucl-ex/0501009} {arXiv:nucl-ex/0501009} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Adcox}\ \emph {et~al.}(2005)\citenamefont {Adcox}
+  \emph {et~al.}}]{PHENIX:2004vcz}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Adcox}} \emph {et~al.} (\bibinfo {collaboration} {PHENIX}),\ }\bibfield
+  {title} {\bibinfo {title} {{Formation of dense partonic matter in
+  relativistic nucleus-nucleus collisions at RHIC: Experimental evaluation by
+  the PHENIX collaboration}},\ }\href
+  {https://doi.org/10.1016/j.nuclphysa.2005.03.086} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nucl. Phys. A}\ }\textbf {\bibinfo {volume} {757}},\
+  \bibinfo {pages} {184} (\bibinfo {year} {2005})},\ \Eprint
+  {https://arxiv.org/abs/nucl-ex/0410003} {arXiv:nucl-ex/0410003} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Fabjan}\ \emph {et~al.}(2006)\citenamefont {Fabjan}
+  \emph {et~al.}}]{ALICE:2005vhb}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~W.}\ \bibnamefont
+  {Fabjan}} \emph {et~al.} (\bibinfo {collaboration} {ALICE}),\ }\bibfield
+  {title} {\bibinfo {title} {{ALICE: Physics Performance Report}},\ }\href
+  {https://doi.org/10.1088/0954-3899/32/10/001} {\bibfield  {journal} {\bibinfo
+   {journal} {J. Phys. G}\ }\textbf {\bibinfo {volume} {32}},\ \bibinfo {pages}
+  {1295} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Busza}\ \emph {et~al.}(2018)\citenamefont {Busza},
+  \citenamefont {Rajagopal},\ and\ \citenamefont {van~der
+  Schee}}]{Busza:2018rrf}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Busza}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Rajagopal}},\
+  and\ \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont {van~der Schee}},\
+  }\bibfield  {title} {\bibinfo {title} {{Heavy Ion Collisions: The Big
+  Picture, and the Big Questions}},\ }\href
+  {https://doi.org/10.1146/annurev-nucl-101917-020852} {\bibfield  {journal}
+  {\bibinfo  {journal} {Ann. Rev. Nucl. Part. Sci.}\ }\textbf {\bibinfo
+  {volume} {68}},\ \bibinfo {pages} {339} (\bibinfo {year} {2018})},\ \Eprint
+  {https://arxiv.org/abs/1802.04801} {arXiv:1802.04801 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Abdulhamid}\ \emph
+  {et~al.}(2024{\natexlab{a}})\citenamefont {Abdulhamid} \emph
+  {et~al.}}]{STAR:2023jdd}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~I.}\ \bibnamefont
+  {Abdulhamid}} \emph {et~al.} (\bibinfo {collaboration} {STAR}),\ }\bibfield
+  {title} {\bibinfo {title} {{Observation of the electromagnetic field effect
+  via charge-dependent directed flow in heavy-ion collisions at the
+  Relativistic Heavy Ion Collider}},\ }\href
+  {https://doi.org/10.1103/PhysRevX.14.011028} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. X}\ }\textbf {\bibinfo {volume} {14}},\ \bibinfo
+  {pages} {011028} (\bibinfo {year} {2024}{\natexlab{a}})},\ \Eprint
+  {https://arxiv.org/abs/2304.03430} {arXiv:2304.03430 [nucl-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Stephanov}\ \emph {et~al.}(1998)\citenamefont
+  {Stephanov}, \citenamefont {Rajagopal},\ and\ \citenamefont
+  {Shuryak}}]{Stephanov:1998dy}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {Stephanov}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Rajagopal}},\ and\ \bibinfo {author} {\bibfnamefont {E.~V.}\ \bibnamefont
+  {Shuryak}},\ }\bibfield  {title} {\bibinfo {title} {{Signatures of the
+  tricritical point in QCD}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.81.4816} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {81}},\ \bibinfo
+  {pages} {4816} (\bibinfo {year} {1998})},\ \Eprint
+  {https://arxiv.org/abs/hep-ph/9806219} {arXiv:hep-ph/9806219} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Stephanov}\ \emph {et~al.}(1999)\citenamefont
+  {Stephanov}, \citenamefont {Rajagopal},\ and\ \citenamefont
+  {Shuryak}}]{Stephanov:1999zu}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~A.}\ \bibnamefont
+  {Stephanov}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Rajagopal}},\ and\ \bibinfo {author} {\bibfnamefont {E.~V.}\ \bibnamefont
+  {Shuryak}},\ }\bibfield  {title} {\bibinfo {title} {{Event-by-event
+  fluctuations in heavy ion collisions and the QCD critical point}},\ }\href
+  {https://doi.org/10.1103/PhysRevD.60.114028} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {60}},\ \bibinfo
+  {pages} {114028} (\bibinfo {year} {1999})},\ \Eprint
+  {https://arxiv.org/abs/hep-ph/9903292} {arXiv:hep-ph/9903292} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Fu}\ \emph {et~al.}(2020)\citenamefont {Fu},
+  \citenamefont {Pawlowski},\ and\ \citenamefont {Rennecke}}]{Fu:2019hdw}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.-j.}\ \bibnamefont
+  {Fu}}, \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Pawlowski}},\
+  and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Rennecke}},\
+  }\bibfield  {title} {\bibinfo {title} {{QCD phase structure at finite
+  temperature and density}},\ }\href
+  {https://doi.org/10.1103/PhysRevD.101.054032} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {101}},\ \bibinfo
+  {pages} {054032} (\bibinfo {year} {2020})},\ \Eprint
+  {https://arxiv.org/abs/1909.02991} {arXiv:1909.02991 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Gao}\ and\ \citenamefont
+  {Pawlowski}(2021)}]{Gao:2020fbl}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Gao}}\ and\ \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Pawlowski}},\ }\bibfield  {title} {\bibinfo {title} {{Chiral phase structure
+  and critical end point in QCD}},\ }\href
+  {https://doi.org/10.1016/j.physletb.2021.136584} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Lett. B}\ }\textbf {\bibinfo {volume} {820}},\
+  \bibinfo {pages} {136584} (\bibinfo {year} {2021})},\ \Eprint
+  {https://arxiv.org/abs/2010.13705} {arXiv:2010.13705 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Gunkel}\ and\ \citenamefont
+  {Fischer}(2021)}]{Gunkel:2021oya}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~J.}\ \bibnamefont
+  {Gunkel}}\ and\ \bibinfo {author} {\bibfnamefont {C.~S.}\ \bibnamefont
+  {Fischer}},\ }\bibfield  {title} {\bibinfo {title} {{Locating the critical
+  endpoint of QCD: Mesonic backcoupling effects}},\ }\href
+  {https://doi.org/10.1103/PhysRevD.104.054022} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {104}},\ \bibinfo
+  {pages} {054022} (\bibinfo {year} {2021})},\ \Eprint
+  {https://arxiv.org/abs/2106.08356} {arXiv:2106.08356 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Aggarwal}\ \emph {et~al.}(2010)\citenamefont
+  {Aggarwal} \emph {et~al.}}]{STAR:2010vob}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~M.}\ \bibnamefont
+  {Aggarwal}} \emph {et~al.} (\bibinfo {collaboration} {STAR}),\ }\bibfield
+  {title} {\bibinfo {title} {{An Experimental Exploration of the QCD Phase
+  Diagram: The Search for the Critical Point and the Onset of
+  De-confinement}},\ }\href@noop {} {\  (\bibinfo {year} {2010})},\ \Eprint
+  {https://arxiv.org/abs/1007.2613} {arXiv:1007.2613 [nucl-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Bzdak}\ \emph {et~al.}(2020)\citenamefont {Bzdak},
+  \citenamefont {Esumi}, \citenamefont {Koch}, \citenamefont {Liao},
+  \citenamefont {Stephanov},\ and\ \citenamefont {Xu}}]{Bzdak:2019pkr}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Bzdak}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Esumi}},
+  \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Koch}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Liao}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Stephanov}},\ and\ \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {Xu}},\ }\bibfield  {title} {\bibinfo {title} {{Mapping the
+  Phases of Quantum Chromodynamics with Beam Energy Scan}},\ }\href
+  {https://doi.org/10.1016/j.physrep.2020.01.005} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rept.}\ }\textbf {\bibinfo {volume} {853}},\
+  \bibinfo {pages} {1} (\bibinfo {year} {2020})},\ \Eprint
+  {https://arxiv.org/abs/1906.00936} {arXiv:1906.00936 [nucl-th]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Chen}\ \emph {et~al.}(2024)\citenamefont {Chen} \emph
+  {et~al.}}]{Chen:2024aom}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Chen}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {{Properties
+  of the QCD matter: review of selected results from the relativistic heavy ion
+  collider beam energy scan (RHIC BES) program}},\ }\href
+  {https://doi.org/10.1007/s41365-024-01591-2} {\bibfield  {journal} {\bibinfo
+  {journal} {Nucl. Sci. Tech.}\ }\textbf {\bibinfo {volume} {35}},\ \bibinfo
+  {pages} {214} (\bibinfo {year} {2024})},\ \Eprint
+  {https://arxiv.org/abs/2407.02935} {arXiv:2407.02935 [nucl-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Adam}\ \emph {et~al.}(2021)\citenamefont {Adam} \emph
+  {et~al.}}]{STAR:2020tga}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Adam}} \emph {et~al.} (\bibinfo {collaboration} {STAR}),\ }\bibfield
+  {title} {\bibinfo {title} {{Nonmonotonic Energy Dependence of Net-Proton
+  Number Fluctuations}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.126.092301} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {126}},\
+  \bibinfo {pages} {092301} (\bibinfo {year} {2021})},\ \Eprint
+  {https://arxiv.org/abs/2001.02852} {arXiv:2001.02852 [nucl-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Abdallah}\ \emph {et~al.}(2022)\citenamefont
+  {Abdallah} \emph {et~al.}}]{STAR:2021fge}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~S.}\ \bibnamefont
+  {Abdallah}} \emph {et~al.} (\bibinfo {collaboration} {STAR}),\ }\bibfield
+  {title} {\bibinfo {title} {{Measurements of Proton High Order Cumulants in
+  $\sqrt{s_{_{\mathrm{NN}}}}$ = 3 GeV Au+Au Collisions and Implications for the
+  QCD Critical Point}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.128.202303} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {128}},\
+  \bibinfo {pages} {202303} (\bibinfo {year} {2022})},\ \Eprint
+  {https://arxiv.org/abs/2112.00240} {arXiv:2112.00240 [nucl-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Aboona}\ \emph {et~al.}(2023)\citenamefont {Aboona}
+  \emph {et~al.}}]{STAR:2022vlo}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Aboona}} \emph {et~al.} (\bibinfo {collaboration} {STAR}),\ }\bibfield
+  {title} {\bibinfo {title} {{Beam Energy Dependence of Fifth and Sixth-Order
+  Net-proton Number Fluctuations in Au+Au Collisions at RHIC}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.130.082301} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {130}},\
+  \bibinfo {pages} {082301} (\bibinfo {year} {2023})},\ \Eprint
+  {https://arxiv.org/abs/2207.09837} {arXiv:2207.09837 [nucl-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Abdallah}\ \emph {et~al.}(2023)\citenamefont
+  {Abdallah} \emph {et~al.}}]{STAR:2022etb}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Abdallah}} \emph {et~al.} (\bibinfo {collaboration} {STAR}),\ }\bibfield
+  {title} {\bibinfo {title} {{Higher-order cumulants and correlation functions
+  of proton multiplicity distributions in sNN=3~GeV~Au+Au collisions at the
+  RHIC STAR experiment}},\ }\href {https://doi.org/10.1103/PhysRevC.107.024908}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. C}\ }\textbf {\bibinfo
+  {volume} {107}},\ \bibinfo {pages} {024908} (\bibinfo {year} {2023})},\
+  \Eprint {https://arxiv.org/abs/2209.11940} {arXiv:2209.11940 [nucl-ex]}
+  \BibitemShut {NoStop}%
+\bibitem [{STA(2025)}]{STAR:2025zdq}%
+  \BibitemOpen
+  \bibfield  {title} {\bibinfo {title} {{Precision Measurement of (Net-)proton
+  Number Fluctuations in Au+Au Collisions at RHIC}},\ }\href@noop {} {\
+  (\bibinfo {year} {2025})},\ \Eprint {https://arxiv.org/abs/2504.00817}
+  {arXiv:2504.00817 [nucl-ex]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fu}\ \emph {et~al.}(2016)\citenamefont {Fu},
+  \citenamefont {Pawlowski}, \citenamefont {Rennecke},\ and\ \citenamefont
+  {Schaefer}}]{Fu:2016tey}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.-j.}\ \bibnamefont
+  {Fu}}, \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Pawlowski}},
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Rennecke}},\ and\
+  \bibinfo {author} {\bibfnamefont {B.-J.}\ \bibnamefont {Schaefer}},\
+  }\bibfield  {title} {\bibinfo {title} {{Baryon number fluctuations at finite
+  temperature and density}},\ }\href
+  {https://doi.org/10.1103/PhysRevD.94.116020} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {94}},\ \bibinfo
+  {pages} {116020} (\bibinfo {year} {2016})},\ \Eprint
+  {https://arxiv.org/abs/1608.04302} {arXiv:1608.04302 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Fu}\ \emph {et~al.}(2021)\citenamefont {Fu},
+  \citenamefont {Luo}, \citenamefont {Pawlowski}, \citenamefont {Rennecke},
+  \citenamefont {Wen},\ and\ \citenamefont {Yin}}]{Fu:2021oaw}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.-j.}\ \bibnamefont
+  {Fu}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Luo}}, \bibinfo
+  {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Pawlowski}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Rennecke}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Wen}},\ and\ \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Yin}},\ }\bibfield  {title} {\bibinfo
+  {title} {{Hyper-order baryon number fluctuations at finite temperature and
+  density}},\ }\href {https://doi.org/10.1103/PhysRevD.104.094047} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume}
+  {104}},\ \bibinfo {pages} {094047} (\bibinfo {year} {2021})},\ \Eprint
+  {https://arxiv.org/abs/2101.06035} {arXiv:2101.06035 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Fu}\ \emph {et~al.}(2025)\citenamefont {Fu},
+  \citenamefont {Luo}, \citenamefont {Pawlowski}, \citenamefont {Rennecke},\
+  and\ \citenamefont {Yin}}]{Fu:2023lcm}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.-j.}\ \bibnamefont
+  {Fu}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Luo}}, \bibinfo
+  {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Pawlowski}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Rennecke}},\ and\ \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Yin}},\ }\bibfield  {title} {\bibinfo
+  {title} {{Ripples of the QCD critical point}},\ }\href
+  {https://doi.org/10.1103/PhysRevD.111.L031502} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {111}},\
+  \bibinfo {pages} {L031502} (\bibinfo {year} {2025})},\ \Eprint
+  {https://arxiv.org/abs/2308.15508} {arXiv:2308.15508 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Lu}\ \emph {et~al.}(2025)\citenamefont {Lu},
+  \citenamefont {Gao}, \citenamefont {Liu},\ and\ \citenamefont
+  {Pawlowski}}]{Lu:2025cls}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Lu}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Gao}}, \bibinfo
+  {author} {\bibfnamefont {Y.-x.}\ \bibnamefont {Liu}},\ and\ \bibinfo {author}
+  {\bibfnamefont {J.~M.}\ \bibnamefont {Pawlowski}},\ }\bibfield  {title}
+  {\bibinfo {title} {{Finite density signatures of confining and chiral
+  dynamics in QCD thermodynamics and fluctuations of conserved charges}},\
+  }\href@noop {} {\  (\bibinfo {year} {2025})},\ \Eprint
+  {https://arxiv.org/abs/2504.05099} {arXiv:2504.05099 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Gavin}(2004)}]{Gavin:2003cb}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Gavin}},\ }\bibfield  {title} {\bibinfo {title} {{Traces of thermalization
+  from transverse momentum fluctuations in nuclear collisions}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.92.162301} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {92}},\
+  \bibinfo {pages} {162301} (\bibinfo {year} {2004})},\ \Eprint
+  {https://arxiv.org/abs/nucl-th/0308067} {arXiv:nucl-th/0308067} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Heiselberg}(2001)}]{Heiselberg:2000fk}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Heiselberg}},\ }\bibfield  {title} {\bibinfo {title} {{Event-by-event
+  physics in relativistic heavy ion collisions}},\ }\href
+  {https://doi.org/10.1016/S0370-1573(00)00140-X} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rept.}\ }\textbf {\bibinfo {volume} {351}},\
+  \bibinfo {pages} {161} (\bibinfo {year} {2001})},\ \Eprint
+  {https://arxiv.org/abs/nucl-th/0003046} {arXiv:nucl-th/0003046} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Jeon}\ and\ \citenamefont
+  {Koch}(2000)}]{Jeon:2000wg}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Jeon}}\ and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Koch}},\
+  }\bibfield  {title} {\bibinfo {title} {{Charged particle ratio fluctuation as
+  a signal for QGP}},\ }\href {https://doi.org/10.1103/PhysRevLett.85.2076}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {85}},\ \bibinfo {pages} {2076} (\bibinfo {year}
+  {2000})},\ \Eprint {https://arxiv.org/abs/hep-ph/0003168}
+  {arXiv:hep-ph/0003168} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Voloshin}\ \emph {et~al.}(1999)\citenamefont
+  {Voloshin}, \citenamefont {Koch},\ and\ \citenamefont
+  {Ritter}}]{Voloshin:1999yf}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~A.}\ \bibnamefont
+  {Voloshin}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Koch}},\
+  and\ \bibinfo {author} {\bibfnamefont {H.~G.}\ \bibnamefont {Ritter}},\
+  }\bibfield  {title} {\bibinfo {title} {{Event-by-event fluctuations in
+  collective quantities}},\ }\href {https://doi.org/10.1103/PhysRevC.60.024901}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. C}\ }\textbf {\bibinfo
+  {volume} {60}},\ \bibinfo {pages} {024901} (\bibinfo {year} {1999})},\
+  \Eprint {https://arxiv.org/abs/nucl-th/9903060} {arXiv:nucl-th/9903060}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Asakawa}\ \emph {et~al.}(2000)\citenamefont
+  {Asakawa}, \citenamefont {Heinz},\ and\ \citenamefont
+  {Muller}}]{Asakawa:2000wh}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Asakawa}}, \bibinfo {author} {\bibfnamefont {U.~W.}\ \bibnamefont {Heinz}},\
+  and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Muller}},\
+  }\bibfield  {title} {\bibinfo {title} {{Fluctuation probes of quark
+  deconfinement}},\ }\href {https://doi.org/10.1103/PhysRevLett.85.2072}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {85}},\ \bibinfo {pages} {2072} (\bibinfo {year}
+  {2000})},\ \Eprint {https://arxiv.org/abs/hep-ph/0003169}
+  {arXiv:hep-ph/0003169} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stodolsky}(1995)}]{Stodolsky:1995ds}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Stodolsky}},\ }\bibfield  {title} {\bibinfo {title} {{Temperature
+  fluctuations in multiparticle production}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.75.1044} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {75}},\ \bibinfo
+  {pages} {1044} (\bibinfo {year} {1995})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gardim}\ \emph {et~al.}(2012)\citenamefont {Gardim},
+  \citenamefont {Grassi}, \citenamefont {Luzum},\ and\ \citenamefont
+  {Ollitrault}}]{Gardim:2011xv}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~G.}\ \bibnamefont
+  {Gardim}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Grassi}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Luzum}},\ and\ \bibinfo
+  {author} {\bibfnamefont {J.-Y.}\ \bibnamefont {Ollitrault}},\ }\bibfield
+  {title} {\bibinfo {title} {{Mapping the hydrodynamic response to the initial
+  geometry in heavy-ion collisions}},\ }\href
+  {https://doi.org/10.1103/PhysRevC.85.024908} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. C}\ }\textbf {\bibinfo {volume} {85}},\ \bibinfo
+  {pages} {024908} (\bibinfo {year} {2012})},\ \Eprint
+  {https://arxiv.org/abs/1111.6538} {arXiv:1111.6538 [nucl-th]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Schenke}\ \emph {et~al.}(2014)\citenamefont
+  {Schenke}, \citenamefont {Tribedy},\ and\ \citenamefont
+  {Venugopalan}}]{Schenke:2014tga}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Schenke}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Tribedy}},\
+  and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Venugopalan}},\
+  }\bibfield  {title} {\bibinfo {title} {{Initial-state geometry and
+  fluctuations in Au + Au, Cu + Au, and U + U collisions at energies available
+  at the BNL Relativistic Heavy Ion Collider}},\ }\href
+  {https://doi.org/10.1103/PhysRevC.89.064908} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. C}\ }\textbf {\bibinfo {volume} {89}},\ \bibinfo
+  {pages} {064908} (\bibinfo {year} {2014})},\ \Eprint
+  {https://arxiv.org/abs/1403.2232} {arXiv:1403.2232 [nucl-th]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Abdulhamid}\ \emph
+  {et~al.}(2024{\natexlab{b}})\citenamefont {Abdulhamid} \emph
+  {et~al.}}]{STAR:2024wgy}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~I.}\ \bibnamefont
+  {Abdulhamid}} \emph {et~al.} (\bibinfo {collaboration} {STAR}),\ }\bibfield
+  {title} {\bibinfo {title} {{Imaging shapes of atomic nuclei in high-energy
+  nuclear collisions}},\ }\href {https://doi.org/10.1038/s41586-024-08097-2}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo
+  {volume} {635}},\ \bibinfo {pages} {67} (\bibinfo {year}
+  {2024}{\natexlab{b}})},\ \Eprint {https://arxiv.org/abs/2401.06625}
+  {arXiv:2401.06625 [nucl-ex]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aad}\ \emph {et~al.}(2024)\citenamefont {Aad} \emph
+  {et~al.}}]{ATLAS:2024jvf}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Aad}} \emph {et~al.} (\bibinfo {collaboration} {ATLAS}),\ }\bibfield
+  {title} {\bibinfo {title} {{Disentangling Sources of Momentum Fluctuations in
+  Xe+Xe and Pb+Pb Collisions with the ATLAS Detector}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.133.252301} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {133}},\
+  \bibinfo {pages} {252301} (\bibinfo {year} {2024})},\ \Eprint
+  {https://arxiv.org/abs/2407.06413} {arXiv:2407.06413 [nucl-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Zhang}\ \emph {et~al.}(2025)\citenamefont {Zhang},
+  \citenamefont {Chen},\ and\ \citenamefont {Zhang}}]{Zhang:2025yyd}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Zhang}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Chen}},\ and\
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Zhang}},\ }\bibfield
+  {title} {\bibinfo {title} {{Energy dependence of transverse momentum
+  fluctuations in Au+Au collisions from a multiphase transport model}},\ }\href
+  {https://doi.org/10.1103/PhysRevC.111.024911} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. C}\ }\textbf {\bibinfo {volume} {111}},\ \bibinfo
+  {pages} {024911} (\bibinfo {year} {2025})},\ \Eprint
+  {https://arxiv.org/abs/2501.08209} {arXiv:2501.08209 [nucl-th]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Gardim}\ \emph
+  {et~al.}(2020{\natexlab{a}})\citenamefont {Gardim}, \citenamefont
+  {Giacalone}, \citenamefont {Luzum},\ and\ \citenamefont
+  {Ollitrault}}]{Gardim:2019xjs}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~G.}\ \bibnamefont
+  {Gardim}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Giacalone}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Luzum}},\ and\ \bibinfo
+  {author} {\bibfnamefont {J.-Y.}\ \bibnamefont {Ollitrault}},\ }\bibfield
+  {title} {\bibinfo {title} {{Thermodynamics of hot strong-interaction matter
+  from ultrarelativistic nuclear collisions}},\ }\href
+  {https://doi.org/10.1038/s41567-020-0846-4} {\bibfield  {journal} {\bibinfo
+  {journal} {Nature Phys.}\ }\textbf {\bibinfo {volume} {16}},\ \bibinfo
+  {pages} {615} (\bibinfo {year} {2020}{\natexlab{a}})},\ \Eprint
+  {https://arxiv.org/abs/1908.09728} {arXiv:1908.09728 [nucl-th]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Gardim}\ \emph
+  {et~al.}(2020{\natexlab{b}})\citenamefont {Gardim}, \citenamefont
+  {Giacalone},\ and\ \citenamefont {Ollitrault}}]{Gardim:2019brr}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~G.}\ \bibnamefont
+  {Gardim}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Giacalone}},\
+  and\ \bibinfo {author} {\bibfnamefont {J.-Y.}\ \bibnamefont {Ollitrault}},\
+  }\bibfield  {title} {\bibinfo {title} {{The mean transverse momentum of
+  ultracentral heavy-ion collisions: A new probe of hydrodynamics}},\ }\href
+  {https://doi.org/10.1016/j.physletb.2020.135749} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Lett. B}\ }\textbf {\bibinfo {volume} {809}},\
+  \bibinfo {pages} {135749} (\bibinfo {year} {2020}{\natexlab{b}})},\ \Eprint
+  {https://arxiv.org/abs/1909.11609} {arXiv:1909.11609 [nucl-th]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Gardim}\ \emph {et~al.}(2024)\citenamefont {Gardim},
+  \citenamefont {Giannini},\ and\ \citenamefont {Ollitrault}}]{Gardim:2024zvi}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~G.}\ \bibnamefont
+  {Gardim}}, \bibinfo {author} {\bibfnamefont {A.~V.}\ \bibnamefont
+  {Giannini}},\ and\ \bibinfo {author} {\bibfnamefont {J.-Y.}\ \bibnamefont
+  {Ollitrault}},\ }\bibfield  {title} {\bibinfo {title} {{Accessing the speed
+  of sound in relativistic ultracentral nucleus-nucleus collisions using the
+  mean transverse momentum}},\ }\href
+  {https://doi.org/10.1016/j.physletb.2024.138937} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Lett. B}\ }\textbf {\bibinfo {volume} {856}},\
+  \bibinfo {pages} {138937} (\bibinfo {year} {2024})},\ \Eprint
+  {https://arxiv.org/abs/2403.06052} {arXiv:2403.06052 [nucl-th]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Hayrapetyan}\ \emph {et~al.}(2024)\citenamefont
+  {Hayrapetyan} \emph {et~al.}}]{CMS:2024sgx}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Hayrapetyan}} \emph {et~al.} (\bibinfo {collaboration} {CMS}),\ }\bibfield
+  {title} {\bibinfo {title} {{Extracting the speed of sound in
+  quark\textendash{}gluon plasma with ultrarelativistic lead\textendash{}lead
+  collisions at the LHC}},\ }\href {https://doi.org/10.1088/1361-6633/ad4b9b}
+  {\bibfield  {journal} {\bibinfo  {journal} {Rept. Prog. Phys.}\ }\textbf
+  {\bibinfo {volume} {87}},\ \bibinfo {pages} {077801} (\bibinfo {year}
+  {2024})},\ \Eprint {https://arxiv.org/abs/2401.06896} {arXiv:2401.06896
+  [nucl-ex]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Arnaldi}\ \emph {et~al.}(2009)\citenamefont {Arnaldi}
+  \emph {et~al.}}]{NA60:2008dcb}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Arnaldi}} \emph {et~al.} (\bibinfo {collaboration} {NA60}),\ }\bibfield
+  {title} {\bibinfo {title} {{Evidence for the production of thermal-like muon
+  pairs with masses above 1-GeV/c**2 in 158-A-GeV Indium-Indium Collisions}},\
+  }\href {https://doi.org/10.1140/epjc/s10052-008-0857-2} {\bibfield  {journal}
+  {\bibinfo  {journal} {Eur. Phys. J. C}\ }\textbf {\bibinfo {volume} {59}},\
+  \bibinfo {pages} {607} (\bibinfo {year} {2009})},\ \Eprint
+  {https://arxiv.org/abs/0810.3204} {arXiv:0810.3204 [nucl-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Adamczewski-Musch}\ \emph {et~al.}(2019)\citenamefont
+  {Adamczewski-Musch} \emph {et~al.}}]{HADES:2019auv}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Adamczewski-Musch}} \emph {et~al.} (\bibinfo {collaboration} {HADES}),\
+  }\bibfield  {title} {\bibinfo {title} {{Probing dense baryon-rich matter with
+  virtual photons}},\ }\href {https://doi.org/10.1038/s41567-019-0583-8}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nature Phys.}\ }\textbf {\bibinfo
+  {volume} {15}},\ \bibinfo {pages} {1040} (\bibinfo {year}
+  {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Churchill}\ \emph {et~al.}(2024)\citenamefont
+  {Churchill}, \citenamefont {Du}, \citenamefont {Gale}, \citenamefont
+  {Jackson},\ and\ \citenamefont {Jeon}}]{Churchill:2023zkk}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Churchill}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Du}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Gale}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Jackson}},\ and\ \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Jeon}},\ }\bibfield  {title} {\bibinfo
+  {title} {{Virtual Photons Shed Light on the Early Temperature of Dense QCD
+  Matter}},\ }\href {https://doi.org/10.1103/PhysRevLett.132.172301} {\bibfield
+   {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {132}},\ \bibinfo {pages} {172301} (\bibinfo {year} {2024})},\
+  \Eprint {https://arxiv.org/abs/2311.06951} {arXiv:2311.06951 [nucl-th]}
+  \BibitemShut {NoStop}%
+\bibitem [{STA(2024)}]{STAR:2024bpc}%
+  \BibitemOpen
+  \bibfield  {title} {\bibinfo {title} {{Temperature Measurement of Quark-Gluon
+  Plasma at Different Stages}},\ }\href@noop {} {\  (\bibinfo {year} {2024})},\
+  \Eprint {https://arxiv.org/abs/2402.01998} {arXiv:2402.01998 [nucl-ex]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Giacalone}\ \emph {et~al.}(2021)\citenamefont
+  {Giacalone}, \citenamefont {Gardim}, \citenamefont {Noronha-Hostler},\ and\
+  \citenamefont {Ollitrault}}]{Giacalone:2020lbm}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Giacalone}}, \bibinfo {author} {\bibfnamefont {F.~G.}\ \bibnamefont
+  {Gardim}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Noronha-Hostler}},\ and\ \bibinfo {author} {\bibfnamefont {J.-Y.}\
+  \bibnamefont {Ollitrault}},\ }\bibfield  {title} {\bibinfo {title} {{Skewness
+  of mean transverse momentum fluctuations in heavy-ion collisions}},\ }\href
+  {https://doi.org/10.1103/PhysRevC.103.024910} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. C}\ }\textbf {\bibinfo {volume} {103}},\ \bibinfo
+  {pages} {024910} (\bibinfo {year} {2021})},\ \Eprint
+  {https://arxiv.org/abs/2004.09799} {arXiv:2004.09799 [nucl-th]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Appelsh\"auser}\ \emph {et~al.}(1999)\citenamefont
+  {Appelsh\"auser} \emph {et~al.}}]{NA49:1999inh}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Appelsh\"auser}} \emph {et~al.} (\bibinfo {collaboration} {NA49}),\
+  }\bibfield  {title} {\bibinfo {title} {{Event-by-event fluctuations of
+  average transverse momentum in central Pb + Pb collisions at 158-GeV per
+  nucleon}},\ }\href {https://doi.org/10.1016/S0370-2693(99)00673-5} {\bibfield
+   {journal} {\bibinfo  {journal} {Phys. Lett. B}\ }\textbf {\bibinfo {volume}
+  {459}},\ \bibinfo {pages} {679} (\bibinfo {year} {1999})},\ \Eprint
+  {https://arxiv.org/abs/hep-ex/9904014} {arXiv:hep-ex/9904014} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Adamova}\ \emph {et~al.}(2003)\citenamefont {Adamova}
+  \emph {et~al.}}]{CERES:2003sap}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Adamova}} \emph {et~al.} (\bibinfo {collaboration} {CERES}),\ }\bibfield
+  {title} {\bibinfo {title} {{Event by event fluctuations of the mean
+  transverse momentum in 40, 80 and 158 A GeV / c Pb - Au collisions}},\ }\href
+  {https://doi.org/10.1016/j.nuclphysa.2003.07.018} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nucl. Phys. A}\ }\textbf {\bibinfo {volume} {727}},\
+  \bibinfo {pages} {97} (\bibinfo {year} {2003})},\ \Eprint
+  {https://arxiv.org/abs/nucl-ex/0305002} {arXiv:nucl-ex/0305002} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Adler}\ \emph {et~al.}(2004)\citenamefont {Adler}
+  \emph {et~al.}}]{PHENIX:2003ccl}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~S.}\ \bibnamefont
+  {Adler}} \emph {et~al.} (\bibinfo {collaboration} {PHENIX}),\ }\bibfield
+  {title} {\bibinfo {title} {{Measurement of nonrandom event by event
+  fluctuations of average transverse momentum in s(NN)**(1/2) = 200-GeV Au+Au
+  and p+p collisions}},\ }\href {https://doi.org/10.1103/PhysRevLett.93.092301}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf
+  {\bibinfo {volume} {93}},\ \bibinfo {pages} {092301} (\bibinfo {year}
+  {2004})},\ \Eprint {https://arxiv.org/abs/nucl-ex/0310005}
+  {arXiv:nucl-ex/0310005} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Adams}\ \emph
+  {et~al.}(2005{\natexlab{b}})\citenamefont {Adams} \emph
+  {et~al.}}]{STAR:2005vxr}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Adams}} \emph {et~al.} (\bibinfo {collaboration} {STAR}),\ }\bibfield
+  {title} {\bibinfo {title} {{Incident energy dependence of pt correlations at
+  RHIC}},\ }\href {https://doi.org/10.1103/PhysRevC.72.044902} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. C}\ }\textbf {\bibinfo {volume}
+  {72}},\ \bibinfo {pages} {044902} (\bibinfo {year} {2005}{\natexlab{b}})},\
+  \Eprint {https://arxiv.org/abs/nucl-ex/0504031} {arXiv:nucl-ex/0504031}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Anticic}\ \emph {et~al.}(2009)\citenamefont {Anticic}
+  \emph {et~al.}}]{NA49:2008fag}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Anticic}} \emph {et~al.} (\bibinfo {collaboration} {NA49}),\ }\bibfield
+  {title} {\bibinfo {title} {{Energy dependence of transverse momentum
+  fluctuations in Pb+Pb collisions at the CERN Super Proton Synchrotron (SPS)
+  at 20A to 158A GeV}},\ }\href {https://doi.org/10.1103/PhysRevC.79.044904}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. C}\ }\textbf {\bibinfo
+  {volume} {79}},\ \bibinfo {pages} {044904} (\bibinfo {year} {2009})},\
+  \Eprint {https://arxiv.org/abs/0810.5580} {arXiv:0810.5580 [nucl-ex]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Acharya}\ \emph {et~al.}(2024)\citenamefont {Acharya}
+  \emph {et~al.}}]{ALICE:2023tej}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Acharya}} \emph {et~al.} (\bibinfo {collaboration} {ALICE}),\ }\bibfield
+  {title} {\bibinfo {title} {{Skewness and kurtosis of mean transverse momentum
+  fluctuations at the LHC energies}},\ }\href
+  {https://doi.org/10.1016/j.physletb.2024.138541} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Lett. B}\ }\textbf {\bibinfo {volume} {850}},\
+  \bibinfo {pages} {138541} (\bibinfo {year} {2024})},\ \Eprint
+  {https://arxiv.org/abs/2308.16217} {arXiv:2308.16217 [nucl-ex]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Wen}\ \emph {et~al.}(2019)\citenamefont {Wen},
+  \citenamefont {Huang},\ and\ \citenamefont {Fu}}]{Wen:2018nkn}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Wen}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Huang}},\ and\
+  \bibinfo {author} {\bibfnamefont {W.-J.}\ \bibnamefont {Fu}},\ }\bibfield
+  {title} {\bibinfo {title} {{Baryon number fluctuations in the 2+1 flavor low
+  energy effective model}},\ }\href
+  {https://doi.org/10.1103/PhysRevD.99.094019} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {99}},\ \bibinfo
+  {pages} {094019} (\bibinfo {year} {2019})},\ \Eprint
+  {https://arxiv.org/abs/1809.04233} {arXiv:1809.04233 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Braun}\ \emph {et~al.}(2020)\citenamefont {Braun},
+  \citenamefont {Fu}, \citenamefont {Pawlowski}, \citenamefont {Rennecke},
+  \citenamefont {Rosenbl\"uh},\ and\ \citenamefont {Yin}}]{Braun:2020ada}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Braun}}, \bibinfo {author} {\bibfnamefont {W.-j.}\ \bibnamefont {Fu}},
+  \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Pawlowski}}, \bibinfo
+  {author} {\bibfnamefont {F.}~\bibnamefont {Rennecke}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {Rosenbl\"uh}},\ and\ \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Yin}},\ }\bibfield  {title} {\bibinfo
+  {title} {{Chiral susceptibility in ( 2+1 )-flavor QCD}},\ }\href
+  {https://doi.org/10.1103/PhysRevD.102.056010} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {102}},\ \bibinfo
+  {pages} {056010} (\bibinfo {year} {2020})},\ \Eprint
+  {https://arxiv.org/abs/2003.13112} {arXiv:2003.13112 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Braun}\ \emph {et~al.}(2023)\citenamefont {Braun}
+  \emph {et~al.}}]{Braun:2023qak}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Braun}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {{Soft modes
+  in hot QCD matter}},\ }\href@noop {} {\  (\bibinfo {year} {2023})},\ \Eprint
+  {https://arxiv.org/abs/2310.19853} {arXiv:2310.19853 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Tan}\ \emph {et~al.}(2025)\citenamefont {Tan},
+  \citenamefont {Chen}, \citenamefont {Fu},\ and\ \citenamefont
+  {Li}}]{Tan:2024fuq}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.-y.}\ \bibnamefont
+  {Tan}}, \bibinfo {author} {\bibfnamefont {Y.-r.}\ \bibnamefont {Chen}},
+  \bibinfo {author} {\bibfnamefont {W.-j.}\ \bibnamefont {Fu}},\ and\ \bibinfo
+  {author} {\bibfnamefont {W.-J.}\ \bibnamefont {Li}},\ }\bibfield  {title}
+  {\bibinfo {title} {{Universality of pseudo-Goldstone damping near critical
+  points}},\ }\href {https://doi.org/10.1038/s41467-025-58170-1} {\bibfield
+  {journal} {\bibinfo  {journal} {Nature Commun.}\ }\textbf {\bibinfo {volume}
+  {16}},\ \bibinfo {pages} {2916} (\bibinfo {year} {2025})},\ \Eprint
+  {https://arxiv.org/abs/2403.03503} {arXiv:2403.03503 [hep-th]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Fu}\ \emph {et~al.}(2024)\citenamefont {Fu},
+  \citenamefont {Pawlowski}, \citenamefont {Pisarski}, \citenamefont
+  {Rennecke}, \citenamefont {Wen},\ and\ \citenamefont {Yin}}]{Fu:2024rto}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.-j.}\ \bibnamefont
+  {Fu}}, \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Pawlowski}},
+  \bibinfo {author} {\bibfnamefont {R.~D.}\ \bibnamefont {Pisarski}}, \bibinfo
+  {author} {\bibfnamefont {F.}~\bibnamefont {Rennecke}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Wen}},\ and\ \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Yin}},\ }\bibfield  {title} {\bibinfo
+  {title} {{The QCD moat regime and its real-time properties}},\ }\href@noop {}
+  {\  (\bibinfo {year} {2024})},\ \Eprint {https://arxiv.org/abs/2412.15949}
+  {arXiv:2412.15949 [hep-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dupuis}\ \emph {et~al.}(2021)\citenamefont {Dupuis},
+  \citenamefont {Canet}, \citenamefont {Eichhorn}, \citenamefont {Metzner},
+  \citenamefont {Pawlowski}, \citenamefont {Tissier},\ and\ \citenamefont
+  {Wschebor}}]{Dupuis:2020fhh}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Dupuis}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Canet}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Eichhorn}}, \bibinfo
+  {author} {\bibfnamefont {W.}~\bibnamefont {Metzner}}, \bibinfo {author}
+  {\bibfnamefont {J.~M.}\ \bibnamefont {Pawlowski}}, \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Tissier}},\ and\ \bibinfo {author}
+  {\bibfnamefont {N.}~\bibnamefont {Wschebor}},\ }\bibfield  {title} {\bibinfo
+  {title} {{The nonperturbative functional renormalization group and its
+  applications}},\ }\href {https://doi.org/10.1016/j.physrep.2021.01.001}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rept.}\ }\textbf {\bibinfo
+  {volume} {910}},\ \bibinfo {pages} {1} (\bibinfo {year} {2021})},\ \Eprint
+  {https://arxiv.org/abs/2006.04853} {arXiv:2006.04853 [cond-mat.stat-mech]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fu}(2022)}]{Fu:2022gou}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.-j.}\ \bibnamefont
+  {Fu}},\ }\bibfield  {title} {\bibinfo {title} {{QCD at finite temperature and
+  density within the fRG approach: an overview}},\ }\href
+  {https://doi.org/10.1088/1572-9494/ac86be} {\bibfield  {journal} {\bibinfo
+  {journal} {Commun. Theor. Phys.}\ }\textbf {\bibinfo {volume} {74}},\
+  \bibinfo {pages} {097304} (\bibinfo {year} {2022})},\ \Eprint
+  {https://arxiv.org/abs/2205.00468} {arXiv:2205.00468 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Braun-Munzinger}\ \emph {et~al.}(2021)\citenamefont
+  {Braun-Munzinger}, \citenamefont {Friman}, \citenamefont {Redlich},
+  \citenamefont {Rustamov},\ and\ \citenamefont
+  {Stachel}}]{Braun-Munzinger:2020jbk}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Braun-Munzinger}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Friman}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Redlich}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Rustamov}},\ and\
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Stachel}},\ }\bibfield
+  {title} {\bibinfo {title} {{Relativistic nuclear collisions: Establishing a
+  non-critical baseline for fluctuation measurements}},\ }\href
+  {https://doi.org/10.1016/j.nuclphysa.2021.122141} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nucl. Phys. A}\ }\textbf {\bibinfo {volume} {1008}},\
+  \bibinfo {pages} {122141} (\bibinfo {year} {2021})},\ \Eprint
+  {https://arxiv.org/abs/2007.02463} {arXiv:2007.02463 [nucl-th]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Vovchenko}\ \emph {et~al.}(2022)\citenamefont
+  {Vovchenko}, \citenamefont {Koch},\ and\ \citenamefont
+  {Shen}}]{Vovchenko:2021kxx}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Vovchenko}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Koch}},\
+  and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Shen}},\ }\bibfield
+  {title} {\bibinfo {title} {{Proton number cumulants and correlation functions
+  in Au-Au collisions at sNN=7.7\textendash{}200 GeV from hydrodynamics}},\
+  }\href {https://doi.org/10.1103/PhysRevC.105.014904} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. C}\ }\textbf {\bibinfo {volume} {105}},\
+  \bibinfo {pages} {014904} (\bibinfo {year} {2022})},\ \Eprint
+  {https://arxiv.org/abs/2107.00163} {arXiv:2107.00163 [hep-ph]} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{R. Manikandhan (STAR
+  Collaboration)}}()}]{QM2025rutik}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{R. Manikandhan (STAR
+  Collaboration)}}},\ }\href@noop {} {\bibinfo {title} {{Dynamical transverse
+  momentum fluctuations at high baryon density measured by the STAR
+  Experiment}}},\ \Eprint {https://arxiv.org/abs/Quark Matter 2025} {Quark
+  Matter 2025} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Y. Gao (STAR Collaboration)}}()}]{QM2025gao}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Y. Gao (STAR
+  Collaboration)}}},\ }\href@noop {} {\bibinfo {title} {{Collision energy
+  dependence of mean transverse momentum fluctuations in Au+Au collisions at
+  STAR}}},\ \Eprint {https://arxiv.org/abs/Quark Matter 2025} {Quark Matter
+  2025} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {fQCD collaboration}()}]{fQCD}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {fQCD collaboration}},\
+  }\href {https://fqcd-collaboration.github.io} {\bibinfo  {journal}
+  {https://fqcd-collaboration.github.io}\ }\BibitemShut {NoStop}%
+\end{thebibliography}%
