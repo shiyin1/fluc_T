@@ -34,7 +34,7 @@ ax1.plot(SFI[:,0],SFI[:,1]**0.5,linewidth=2,alpha=0.8,label=r'$\mathrm{Freeze-ou
 ax1.plot(SFII[:,0],SFII[:,1]**0.5,linewidth=2,alpha=0.8,label=r'$\mathrm{Freeze-out:\,STAR\,Fit\,II}$') 
 ax1.set_ylabel(r'$c_2^{1/2}(\sqrt{s_{NN}})$', fontsize=13, color='black')
 ax1.set_xlabel(r'$\sqrt{s_{NN}}\,[\mathrm{GeV}]$', fontsize=13, color='black')
-ax1.set_title(r'$\mathrm{QCD-assisted\,\,LEFT}$', fontsize=13, color='black')
+ax1.set_title(r'$\mathrm{QCD}$', fontsize=13, color='black')
 ax1.legend(loc=0,fontsize='10',frameon=True,shadow=True,handlelength=3.,borderpad=0.5,borderaxespad=1,numpoints=1,scatterpoints=1)
 ax1.axis([4,100,0.15,0.3])
 ax1.set_xscale('log')
