@@ -1,0 +1,269 @@
+\documentclass[aps,article,author-year,notitlepage,showpacs]{revtex4-2}
+%\documentclass[a4paper]{article}
+
+\usepackage{xcolor}
+\usepackage{graphicx}% Include figure files
+\usepackage{enumerate}
+\usepackage{amssymb,amsmath}
+\usepackage{bm}% bold math
+\usepackage{bbold}
+
+
+
+%%%%%%%%%%%%% Comments %%%%%%%%%%%%%
+\newcommand{\colwj}[1]{\textcolor{blue}{#1}}
+\newcommand{\cJMP}[1]{\textcolor{red}{#1}}
+\newcommand{\cFR}[1]{\textcolor{violet}{#1}}
+
+
+\graphicspath{{./figures/}{./}}
+
+
+\begin{document}
+
+\large
+
+\noindent {\bf LD19694 Chen}\\
+
+\noindent Title: High-order fluctuations of temperature in hot QCD matter\\
+
+\noindent Authors: Jinhui Chen, Wei-jie Fu, Shi Yin, Chunjian Zhang\\[3ex] 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\noindent \underline{Summary of revision}:\\
+
+\noindent  We thank both referees for the comments and suggestions. In response, we have revised the manuscript both in the main text and the supplemental materials with the modification and addition highlighted (in the file ``main-and-supplement''). Here the revision is summarized as follows:\\[-1.5ex] 
+
+\begin{itemize}
+
+\item[$\bullet$] We have calculated the temperature fluctuations on the chemical freeze-out curves. The relevant results are presented in the main text in the new plot Fig.~3.
+
+\item[$\bullet$] We have extended our calculations to QCD within the fRG approach. The temperature fluctuations obtained in QCD and the low energy effective field theory (LEFT) are compared. The relevant details and results are presented in the supplemental materials in the new section ``S.2. Preliminary results of temperature fluctuations calculated in QCD within fRG'' and in the new plot Fig.~10.
+
+\item[$\bullet$] We have proved the relation $\langle p_{T} \rangle=a\, T$ analytically for a free relativistic gas in thermal equilibrium with Boltzmann statistics, where the coefficient is found to be $a=2.356$. The relevant details are presented in the supplemental materials in the new section ``S.5. Relation between the temperature $T$ and the mean transverse momentum $\langle p_{T} \rangle$''.
+
+\item[$\bullet$] We have moved the fifth- and sixth-order temperature fluctuations in Fig.~2 and Eq.~(10) in the main text in the first version, to the supplemental materials in the new section ``S.3. Hyper-order fluctuations of temperature''.
+
+\item[$\bullet$] We have moved the ratios between the temperature fluctuations of different orders in Fig.~3 in the main text in the first version, to the supplemental materials in the new section ``S.4. Ratios of temperature fluctuation cumulants''.
+
+\item[$\bullet$] Several discussions and modifications were made in the main text, related to the questions or comments by the referees in the following.
+
+\item[$\bullet$] Some references were added. \\[2ex] 
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\noindent \underline{Answer to Referee A}:\\
+
+\begin{itemize}
+
+\item[$\bullet$] {\bf Comment:}  {\it ``The authors introduce a new thermodynamic potential which is suitable
+to discuss higher order moments of temperature fluctuations. Their
+motivation for doing so is that they aim at a systematic analysis of
+transverse momentum fluctuations measured in heavy ion collision
+experiments. This could have been done also in the conventional
+micro-canonical ensemble. The ensemble introduced by the authors
+differs from the micro-canonical ensemble only by exchanging the
+particle number in favor of the chemical potential as a parameter the
+describes a thermodynamic equilibrium state.\\[-2ex]
+
+A goal of the paper is to contribute to a systematic discussion of
+transverse momentum fluctuations. This, however, is not the case.
+Transverse momentum fluctuations are generally discussed in terms of
+'initial state fluctuations' of energy and particle number and the
+temperature introduced in this context is an effective temperature
+related to the evolution of the medium, generated in heavy ion
+collisions, towards an equilibrium state. The paper merely discusses
+thermodynamic relations valid in a certain thermodynamic ensemble that
+describes equilibrium thermodynamics keeping certain state variables,
+characterizing a thermodynamic state, constant. The argument that the
+newly introduced ensemble described by ``W'' is in this respect
+preferable to the usually considered micro-canonical ensemble is not
+convincing.\\[-2ex]
+
+I thus think that this paper does not contribute to a more systematic
+analysis or better understanding of transverse momentum fluctuations
+in heavy ion collisions. A more detailed analysis and direct
+comparison with experimental data may be needed, which could be given
+in a regular article.
+''}\\[-1ex]
+
+{\bf Answer:} We thank the referee for this critical comment, which helps to sharpen our presentation. Below we address the main concerns regarding the novelty and applicability of our approach. \\[-2ex]
+
+{\bf 1) Novelty of the thermodynamic ensemble:}\\[-2ex]
+
+The referee notes that the introduced ensemble differs from the microcanonical ensemble ``only by exchanging the particle number in favor of the chemical potential." While we agree that both ensembles describe the same underlying equilibrium physics, the crucial innovation lies in the choice of independent variables and the resulting state function.\\[-2ex]
+
+In the context of event-by-event fluctuations in heavy-ion collisions, the natural experimental control parameters are the average entropy (proxied by charged particle multiplicity $N_{\mathrm{ch}}$), the system volume $V$ (fixed by acceptance cuts), and the chemical potentials of conserved charges (here we focus on the baryon chemical potential $\mu_B$, determined by, e.g., the collision energy, centrality, etc.). Our ensemble, denoted by the state function $W$ with its natural variables ($S, V, \mu_B$), is specifically tailored for these experimental conditions. This makes it the appropriate thermodynamic state function for analyzing mean transverse momentum fluctuations in heavy-ion collisions. Instead, if we use the microcanonical ensemble, the calculated results would be the mean transverse momentum fluctuations measured with the collision events that have the same net-baryon number, which obviously is not the case in current experimental measurement.\\[-2ex]
+
+We are sorry for the unclear expression in the manuscript. In the revised version, we try to make it clearer and have modified the related paragraph on page 2 highlighted in color. \\[-1ex]
+
+{\bf 2) Relevance to transverse momentum fluctuations:}\\[-2ex]
+
+The goal of our paper is to study the characteristics of thermodynamic temperature fluctuations, which makes it possible to dig out the thermodynamical contributions in the mean transverse momentum fluctuations from other contributions, such as the initial state geometry fluctuations, volume fluctuations, etc., in future experiments. To that end, it is certainly necessary to understand all these contributions comprehensively, but this is beyond the scope of this paper.\\[-2ex]
+
+We believe that we have achieved the goal in this paper. Several distinct characteristics of thermodynamic temperature fluctuations are found: i) The inherent relations between the temperature fluctuations and other conventional thermodynamic quantities are found based on the newly introduced state function $W$, e.g., the variance of temperature fluctuations is inversely proportional to the heat capacity, larger the heat capacity, smaller the variance of temperature fluctuation. ii) We demonstrate that the suppression of temperature fluctuations as the matter evolves from the HRG to QGP phase with the increase of temperature or baryon chemical potential. iii) it is found that the skewness of thermodynamic temperature fluctuations is negative, in sharp contrast to the positive skewness from hydrodynamic flows. Therefore, it is proposed in this paper that a negative skewness of $\langle p_{T} \rangle$ fluctuations can be used as a smoking-gun signature for the thermodynamic temperature fluctuations.\\[-1ex]
+
+{\bf 3) Physical significances:}\\[-2ex]
+
+Note that the characteristics or features mentioned above originate from the substantial increase in the heat capacity of QCD matter, as the system transitions from the HRG to QGP phase with the increasing temperature or baryon chemical potential, which are general. Therefore, our work provides model-independent predictions that can be tested against experimental data on mean transverse momentum fluctuations. Furthermore, in the revised version we have added new results of temperature fluctuations on the chemical freeze-out curves, Fig. 3 in the main text, which would facilitates a comparison with the experimental data at different collision energy in the future.\\[-1ex]
+
+{\bf 4) Connections to practical experimental measurements:}\\[-2ex]
+
+We have explicitly included the connections to practical experimental measurements in the revised manuscript. i) The derivation of the linear relation $\left\langle p_T\right\rangle=2.356 T$. ii) Calculations of fluctuation observables along the chemical freeze-out curves. iii) New results of temperature fluctuations in QCD which corroborate the former results in LEFT. iv) Dimensionless ratios that eliminate proportionality constant factors. These additions strengthen the connection between our theoretical framework and experimental observables. Note that the STAR collaboration has recently presented the preliminary measurements of $\langle p_{T} \rangle$ fluctuations in Beam Energy Scan and Fixed Target mode at Quark Matter 2025, see \\
+https://indico.cern.ch/event/1334113/contributions/6291968/,\\
+https://indico.cern.ch/event/1334113/contributions/6369493/. \\
+We believe these developments provide valuable insights for interpreting current and future experimental results from world-wide RHIC, LHC, CBM, NICA, HIAF and other high-baryon density facilities.\\[1ex]
+
+In addition, we have improved the manuscript based on the two referee reports. A summary of revision is presented in the beginning of this response. Therefore, we respectfully request reconsideration for the revised manuscript to be published in PRL.\\[3ex]
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent \underline{Answer to Referee B}:\\
+
+\begin{itemize}
+
+\item[$\bullet$] {\bf Comment:} {\it ``New experimental data are available by the ALICE and ATLAS groups for
+the fluctuations of the transverse momentum of charged hadrons in
+heavy-ion collisions, STAR has presented such fluctuations in the
+context of the collision energy dependence at the Quark Matter
+conference in 2025. While a non-monotonic behavior of mean $p_T$
+fluctuations as a function of centrality was suggested as one of the
+possible signals of the QGP, such fluctuations are also affected by
+non-thermodynamic variations in the initial geometry of the collision.
+
+This paper attempts to calculate a theory prediction on these momentum
+fluctuations based on Equilibrium QCD. The procedure is based on the
+calculation of temperature fluctuations in as system with fixed
+entropy. $<p_T>$ is understood to be proportional to temperature, that
+admits equilibrium temperature as a proxy. The proportionality factor
+can be canceled by building various ratios of fluctuations. All this
+is discussed in the context of a low energy effective model
+parameterized using FRG equations in the past. The model is summarized
+in the supplemental material.
+''}\\[-1ex]
+
+{\bf A:} Thank you for the comments, where the motivations and background for this paper are summarized accurately. In the revised version, we have also extended our calculations from the low energy effective model to QCD within the fRG discussed in detail in Ref. [10] ({\it Phys. Rev. D 101, 054032 (2020)}). \\[1ex]
+
+\item[$\bullet$] {\it ``There are three principal problems or questions that I formulate:\\[-2ex]
+
+{\bf Main Question: 1)} To what extent are the fluctuations in thermal equilibrium relevant
+in the interpretation of experimental results. How much of the
+fluctuations actually describe the initial state of a hydrodynamical
+evolution?''}\\[-1ex]
+
+{\bf A:} Indeed, this is a key question. Very possibly it is the case that the thermodynamic contribution is buried in the non-thermodynamic $\langle p_{T} \rangle$ fluctuations of charged particles, such as the initial geometry fluctuations. It is challenging to separate the thermodynamic fluctuation from non-thermodynamic ones, and if it is observed finally, that would be a tremendous achievement. \\[-2ex]
+
+Fortunately, on the one hand, as the initial state geometry fluctuations are described and thus understood progressively well in heavy-ion collision experiments, one is able to isolate the non-thermodynamic effects as many as possible. On the other hand, it is found in this work that the skewness of thermodynamic temperature fluctuations is negative, in sharp contrast to the positive skewness from hydrodynamic flows. Therefore, it is proposed in this paper that a negative skewness of $\langle p_{T} \rangle$ fluctuations can be used as a smoking-gun signature for the thermodynamic temperature fluctuations.\\[-2ex]
+
+Recently, The STAR collaboration has presented the preliminary measurements of $\langle p_{T} \rangle$ fluctuations for different collision energies at Quark Matter 2025. One can see that the skewness decreases significantly from the peripheral to central collisions, and it is consistent with zero within errors in the most central collisions. This might indicate that we are close to unveil the thermodynamic temperature fluctuations hidden deeply beneath non-thermodynamic fluctuations.\\[1ex]
+
+
+\item[$\bullet$] {\bf Main Q 2)} {\it ``The state function of $(S,V,\mu)$ that the authors define through a
+Legendre transformation allows the calculation of the fluctuation of
+temperature. This point (and the actual computation of the
+fluctuations themselves) is the novelty in the paper. The connection
+between $dw/ds$ and $\langle p_{T} \rangle$ should be worked out better. Presently it is
+just a single motivating sentence in the manuscript, what I would like
+to see is a proof. One could move a plot to the supplemental material
+if more space is required for this.
+''}\\[-1ex] 
+
+{\bf A:} Thanks for your valuable suggestion. Considering a free relativistic gas in thermal equilibrium at temperature $T$ with Boltzmann statistics, where the mass of particle, e.g., the pion $m_\pi\sim 150 $ MeV, is negligible in comparison to the typical value of the transverse momentum $p_T \sim 1$ GeV, the particle number reads
+\begin{align}
+    N=(2s+1)V\int \frac{d^3 p}{(2\pi)^3}e^{-p/T}\,, \label{eq:N}
+\end{align}
+where $s$ denotes the spin of the particle and $V$ the volume of system. One readily finds for the mean transverse momentum of particles
+\begin{align}
+    \langle p_{T} \rangle=\frac{1}{N}(2s+1)V\int \frac{d^3 p}{(2\pi)^3}\,p_{T}\,e^{-p/T}\,, \label{eq:pt}
+\end{align}
+where the momentum and the transverse momentum is related through
+\begin{align}
+    p=\sqrt{p_{T}^2+p_z^2}\,, \label{}
+\end{align}
+with the longitudinal momentum $p_z$. Combining Eqs.~(\ref{eq:N}) and (\ref{eq:pt}) we have
+\begin{align}
+    \langle p_{T} \rangle=\frac{\int \frac{d^3 p}{(2\pi)^3}\,p_{T}\,e^{-p/T}}{\int \frac{d^3 p}{(2\pi)^3}\,e^{-p/T}}\,. \label{eq:pt2}
+\end{align}
+From the dimensional analysis in Eqs.~(\ref{eq:pt2}), one immediately arrives at
+\begin{align}
+    \langle p_{T} \rangle=a\, T\,, \label{eq:pt-T}
+\end{align}
+that is, $\langle p_{T} \rangle$ is linearly proportional to the temperature, with the proportionality coefficient $a$. Note that this is different from the non-relativistic case, where it is easy to find that $\langle p_{T} \rangle \sim T^{1/2}$. In order to determine the coefficient $a$ in Eq.~(\ref{eq:pt-T}), one has to compute the expression in Eq.~(\ref{eq:pt2}). The integral in the numerator in Eq.~(\ref{eq:pt2}) cannot be computed analytically, but one can expand the momentum in the exponent in powers of $p_z/p_{T}$, i.e.,
+\begin{align}
+    p&=p_{T}\Big(1+\frac{p_z^2}{p_{T}^2}\Big)^{1/2} \nonumber\\[2ex]
+    &=p_{T}+\frac{1}{2}\frac{p_z^2}{p_{T}}+\cdots\,.\label{eq:pexpan}
+\end{align}
+Expanding Eq.~(\ref{eq:pexpan}) to the second order, and substituting into Eq.~(\ref{eq:pt2}), one finds
+\begin{align}
+    \langle p_{T} \rangle \approx \frac{15}{16\sqrt{2}}\pi T \approx 2.08 \,T\,. \label{}
+\end{align}
+Note that this value is close to the exact value
+\begin{align}
+    a=2.356\,, \label{}
+\end{align}
+obtained by directly computing Eq.~(\ref{eq:pt2}) numerically.\\
+
+In the revised version, we have added a new section (S.5) in the supplemental materials to discuss the relation between $T$ and $\langle p_{T} \rangle$.\\[1ex]
+
+
+\item[$\bullet$]  {\bf Main Q 3)}  {\it ``The computation uses high order temperature derivatives of the
+pressure function in an intermediate step Eqs (9-10). The PQM model
+used by the authors may be a crude approximation for this task. While
+a comparison to lattice QCD was performed for this model in earlier
+works, the high order temperature derivatives are not among the
+observables that have ever been tested. Note, that even lattice would
+have severe difficulties going beyond $\chi_2$, because of the numerical
+nature of obtaining these.
+''}\\[-1ex]
+
+{\bf A:} Thank you for the suggestion. Following the suggestion, we have also tried our best to calculate the temperature fluctuations in QCD within the fRG. The relevant results are presented in Fig. 10 in the supplement (in the file of main text + supplement). One can see that although there are some differences, the variance and skewness of temperature fluctuations calculated from the LEFT and QCD are consistent with each other qualitatively. Note that the main conclusions obtained from the calculations in LEFT are corroborated by the QCD results, e.g., the skewness of temperature fluctuations is negative and the variance decreases significantly with the increase of temperature. The quantitative difference between the LEFT and QCD mainly arises from the fact that the calculations of temperature fluctuations in QCD are far more difficult. We are still working on the improvement of the QCD computation and hope to report a relatively complete result in the near future. \\[1ex]
+
+
+\item[$\bullet$] {\it ``Some more further points:\\[-2ex]
+
+ {\bf Further Q a)} The rich structure visible in the result plots might just be an
+instability of making higher order derivatives. Do the authors insist
+to use that high chemical potentials?
+''}\\[-1ex]
+
+{\bf A:} We have checked that the nonmonotonic structure, observed specially at high baryon chemical potential, does not come from the instability of performing high order derivatives numerically. Instead, it arises from the increasingly sharpened crossover with the increase of chemical potential, being not far away from the critical end point (CEP) in the LEFT with ${\mu_B}_{_{\mathrm{CEP}}}\sim 650$ MeV, see Ref.~[23].\\[-2ex]
+
+In order to avoid unnecessary confusion, we would like to follow your suggestion and reduce the highest $\mu_B$ presented in the result plots from 550 MeV to 500 MeV. All the relevant figures have been updated in the revised version. Thanks for the suggestion.\\[1ex]
+
+\item[$\bullet$] {\bf Further Q b)} {\it ``Would the computation of the fluctuation ration make sense on the
+chemical freeze-out line, instead of fixed $\mu$, $T$-scans?''}\\[-1ex]
+
+{\bf A:} Thank you for the suggestion. It is reasonable to calculate the temperature fluctuations on the chemical freeze-out curves, assuming that the fluctuations at freeze-out make a main contribution and other effects, e.g., the nonequilibrium dynamics, do not play a dominant role. It also facilitates a comparison with the experimental data at different collision energy in the future. Therefore, in the revised version we have done new calculations and computed the variance ($c_2$), skewness ($c_3$), and kurtosis ($c_4$) of temperature fluctuations on three representative freeze-out curves, as functions of the collision energy, as shown in Fig. 3 in the main content. In the same way, the ratios between them can also be obtained.\\[1ex]
+
+\item[$\bullet$] {\bf Comment} {\it ``Then the question: is this a PRL?\\[-2ex]
+
+As far as a can tell, the result is a significant step forward and
+represents a welcome theoretical contribution that complements the
+progress in experiment. This can clear the way for further research
+with better models.\\[-2ex]
+
+Yet, I am unsure: the paper in its present form does not provide
+enough details to convince that the presented idea is actually
+correct.
+''}\\[-1ex] 
+
+{\bf A:} Thanks for the positive assessment and comments. In order to investigate the robustness of our results, we have performed lots of additional studies and calculations in the past several months, e.g., extending the calculations to QCD, deriving the relation between the mean transverse momentum and the temperature, calculating the temperature fluctuations on the freeze-out curves, etc. A summary of revision can be found in the beginning of the response. It turns out that both the theoretical method and results are valid and robust. We hope this revised paper now has already contained enough details. Thank you again.
+
+
+\end{itemize}
+
+
+
+\end{document}

@@ -139,6 +139,43 @@ fig.subplots_adjust(top=0.9, bottom=0.15, left=0.17, right=0.95, hspace=0.33,wsp
 fig.savefig("./c2.pdf")
 ################################################################################################################
 # Create figure
+fig=plt.figure(figsize=(4.5, 3.5))
+#fig=plt.figure()
+ax1=fig.add_subplot(111)
+ax1.plot(T,c3mub0,linewidth=2,alpha=1,c='#7fb2d3') 
+ax1.plot(T,c3mub100,linewidth=1.5,alpha=1,c='#8dd3c9') 
+ax1.plot(T,c3mub200,linewidth=2,alpha=1,c='#ffb55f') 
+ax1.plot(T,c3mub300,linewidth=2,alpha=1,c='#fc7f71') 
+
+ax1.plot(TQCD,c3QCDmub0,linewidth=2,alpha=1,c='#7fb2d3',dashes=[2,1]) 
+ax1.plot(TQCD,c3QCDmub100,linewidth=2,alpha=1,c='#8dd3c9',dashes=[2,1]) 
+ax1.plot(TQCD,c3QCDmub200,linewidth=2,alpha=1,c='#ffb55f',dashes=[2,1]) 
+ax1.plot(TQCD,c3QCDmub300,linewidth=2,alpha=1,c='#fc7f71',dashes=[2,1]) 
+
+ax1.plot(TQCD,c2QCDmub400-100,linewidth=6,alpha=0.8,c='#7fb2d3',label=r'$\mu_B=0$') 
+ax1.plot(TQCD,c2QCDmub500-100,linewidth=6,alpha=0.8,c='#8dd3c9',label=r'$\mu_B=100\,\mathrm{MeV}$') 
+ax1.plot(TQCD,c2QCDmub500-100,linewidth=6,alpha=0.8,c='#ffb55f',label=r'$\mu_B=200\,\mathrm{MeV}$') 
+ax1.plot(TQCD,c2QCDmub500-100,linewidth=6,alpha=0.8,c='#fc7f71',label=r'$\mu_B=300\,\mathrm{MeV}$') 
+
+ax1.plot(TQCD,c2QCDmub500-100,linewidth=2,alpha=1,c='gray',label=r'$\mathrm{QCD-assisted\,\,LEFT}$') 
+ax1.plot(TQCD,c2QCDmub500-100,linewidth=2,alpha=1,c='gray',dashes=[2,1],label=r'$\mathrm{QCD}$') 
+
+ax1.set_ylabel(r'$c_3(T,\mu_B)$', fontsize=13, color='black')
+ax1.set_xlabel(r'$T\,[\mathrm{MeV}]$', fontsize=13, color='black')
+ax1.legend(loc=0,fontsize='8',frameon=True,shadow=True,handlelength=3.,borderpad=0.5,borderaxespad=1,numpoints=1,scatterpoints=1)
+ax1.axis([50,250,-10.,-5*10**-4])
+ax1.set_xticklabels([])
+ax1.set_yscale('symlog',linthresh=10**-7)
+for label in ax1.xaxis.get_ticklabels():
+    label.set_fontsize(10)
+for label in ax1.yaxis.get_ticklabels():
+    label.set_fontsize(10)
+
+fig.subplots_adjust(top=0.9, bottom=0.15, left=0.17, right=0.95, hspace=0.33,wspace=0.2)
+
+fig.savefig("./c3.pdf")
+################################################################################################################
+# Create figure
 fig=plt.figure(figsize=(4.5*2, 3.5*2))
 #fig=plt.figure()
 ax1=fig.add_subplot(221)
