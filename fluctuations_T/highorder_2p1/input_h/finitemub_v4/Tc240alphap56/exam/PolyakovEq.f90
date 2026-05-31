@@ -82,7 +82,7 @@ subroutine PolyakovEq(n, x, fvec)
 
   T0=240.Q+00
 
-  T_r=0.3Q+00*(T-T0)/T0+1.Q+00
+  T_r=0.56Q+00*(T-T0)/T0+1.Q+00
 
   aPolya=(a1+a2/T_r+a3/T_r**2)/(1.Q+00+a4/T_r+a5/T_r**2)
   cPolya=(c1+c2/T_r+c3/T_r**2)/(1.Q+00+c4/T_r+c5/T_r**2)
