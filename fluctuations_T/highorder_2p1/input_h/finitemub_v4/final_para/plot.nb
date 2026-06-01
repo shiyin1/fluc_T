@@ -3325,10 +3325,10 @@ Cell[BoxData["\<\"./P.pdf\"\>"], "Output",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1435.5, 711.75},
+WindowSize->{1800, 1102},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 Magnification:>1.25 Inherited,
-FrontEndVersion->"14.3 for Linux x86 (64-bit) (2025\:5e747\:67088\:65e5)",
+FrontEndVersion->"13.2 for Mac OS X x86 (64-bit) (2023\:5e741\:670830\:65e5)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"c750beaa-5ea3-49b9-811e-6123fb2bba30"
 ]
@@ -3344,19 +3344,19 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 299, 5, 55, "Input",ExpressionUUID->"cc61a57e-5f4f-41ff-bed1-ecfac882686a"],
-Cell[882, 29, 1353, 19, 41, "Output",ExpressionUUID->"0dfbde32-54cb-4c2d-aaa6-d8c3f3d15ae7"]
+Cell[580, 22, 299, 5, 54, "Input",ExpressionUUID->"cc61a57e-5f4f-41ff-bed1-ecfac882686a"],
+Cell[882, 29, 1353, 19, 42, "Output",ExpressionUUID->"0dfbde32-54cb-4c2d-aaa6-d8c3f3d15ae7"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2272, 53, 157, 3, 66, "Subsection",ExpressionUUID->"e51fdc4c-a7c8-4b84-abb7-a475ba1a55e0"],
+Cell[2272, 53, 157, 3, 67, "Subsection",ExpressionUUID->"e51fdc4c-a7c8-4b84-abb7-a475ba1a55e0"],
 Cell[2432, 58, 5300, 146, 967, "Input",ExpressionUUID->"a5720544-ed72-4f0b-912f-9191cfde90d8"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[7769, 209, 155, 3, 45, "Subsection",ExpressionUUID->"69dd0342-25b2-472b-9678-2666f6d696ff"],
-Cell[7927, 214, 4029, 106, 600, "Input",ExpressionUUID->"a4ccad80-bfe8-42e2-bb8e-00435fdac872"],
+Cell[7769, 209, 155, 3, 46, "Subsection",ExpressionUUID->"69dd0342-25b2-472b-9678-2666f6d696ff"],
+Cell[7927, 214, 4029, 106, 588, "Input",ExpressionUUID->"a4ccad80-bfe8-42e2-bb8e-00435fdac872"],
 Cell[CellGroupData[{
-Cell[11981, 324, 2636, 65, 296, "Input",ExpressionUUID->"2e4de795-25ea-6746-b15f-8496b5c4d247"],
-Cell[14620, 391, 157936, 2912, 320, "Output",ExpressionUUID->"7b5381a8-9194-4dfd-8013-bc47c58462be"],
+Cell[11981, 324, 2636, 65, 197, "Input",ExpressionUUID->"2e4de795-25ea-6746-b15f-8496b5c4d247"],
+Cell[14620, 391, 157936, 2912, 321, "Output",ExpressionUUID->"7b5381a8-9194-4dfd-8013-bc47c58462be"],
 Cell[172559, 3305, 1356, 18, 41, "Output",ExpressionUUID->"1c2ed7ab-c24a-4790-8802-f3d740fd9b24"]
 }, Open  ]]
 }, Open  ]]
