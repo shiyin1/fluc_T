@@ -39,7 +39,7 @@ program QM
 
   dT=1.Q+00
 
-  mu_up=20.Q+00
+  mu_up=15.Q+00
   mu_down=-mu_up
 
   do jl=1,9

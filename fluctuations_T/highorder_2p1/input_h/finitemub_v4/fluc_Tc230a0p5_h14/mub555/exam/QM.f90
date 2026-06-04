@@ -64,7 +64,7 @@ program QM
   muk=0.Q+00
   muBi=555.Q+0
   
-  T_up=20.Q+0
+  T_up=15.Q+0
   T_down=-T_up
   T_delta=cos(pi*(real(J,kind=16)-0.5Q+00)/real(Tnum,kind=16))*(0.5Q+00*(T_up-T_down))+0.5Q+00*(T_up+T_down)
   dT=1.Q+00
